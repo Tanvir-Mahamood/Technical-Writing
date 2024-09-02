@@ -1,0 +1,59 @@
+\documentclass[twocolumn]{article}
+\usepackage{array}
+\usepackage{verbatim}
+
+\begin{document}
+
+\begin{figure*}[b!]
+    \centering
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{7.5cm}|>{\raggedright\arraybackslash}p{1cm}|>{\raggedright\arraybackslash}p{4cm}|}
+        \hline
+        \textbf{Algorithm} & \textbf{Cost} & \textbf{Number of Operations} \\
+        \hline
+        \begin{verbatim}
+selectionSort(arr: A)
+    for i from 1 to A.length-1 do
+        minIndex = i
+        for j from i+1 to A.length do
+            if A[j] < A[minIndex] then
+                minIndex = j
+            end if
+        end for
+        if A[i] < A[minIndex] then
+            Temp = A[i]
+            A[i] = A[minIndex]
+            A[minIndex] = temp
+        end if
+    end for
+        \end{verbatim}
+        &
+        \begin{verbatim}
+C1
+c2
+c3
+c4
+c5
+c6
+c7
+        \end{verbatim}
+        &
+        \begin{verbatim}
+n
+(n-1)
+(n-1)+(n-2)+...+3+2+1
+= n(n-1)/2 
+(n-1)
+(n-1)
+(n-1)
+(n-1)
+        \end{verbatim}
+        \\
+        \hline
+        \multicolumn{3}{|p{12.5cm}|}{Total Complexity: $c_1 n + c_2(n-1) + c_3n(n-1)/2 + c_4(n-1) + c_5(n-1) + c_6(n-1) + c_7(n-1)$} \\
+        \hline
+    \end{tabular}
+    %\caption{Analysis of Selection Sort Algorithm}
+    %\label{tab:selectionsort}
+\end{figure*}
+
+\end{document}
