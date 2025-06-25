@@ -6,3 +6,6 @@ This repository contains a technical writing project completed by a group. The p
 ## Content:
 - LaTeX Source: [file.tex](https://github.com/Tanvir-Mahamood/Technical-Writing/blob/main/paper.tex) The source code for the technical writing project written in LaTeX.
 - Compiled PDF: [file.pdf](https://github.com/Tanvir-Mahamood/Technical-Writing/blob/main/Comparative%20Analysis%20of%20Selection%20Sort%20and%20TimSort.pdf) The compiled PDF document generated from the LaTeX source.
+
+## 📄 License
+Here is the License: [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](LICENSE).
